@@ -1,19 +1,17 @@
-# 🎈 Blank app template
+📊 OSG Data Mapping App
+This Streamlit app processes and maps OnsiteGo (OSG) warranty sales data with product purchase details to extract critical fields like model, category, brand, invoice number, item rate, and IMEI. It also identifies and exports rows with missing critical information for manual review.
 
-A simple Streamlit app template for you to modify!
+🚀 Features
+Upload OSG and Product Excel files.
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
+Automatically map product model, category, brand, invoice number, item rate, and IMEI based on customer mobile and SKU logic.
 
-### How to run it on your own machine
+Extract and calculate warranty duration and manufacturer warranty from SKU patterns.
 
-1. Install the requirements
+Detect and highlight rows with missing or inconsistent data.
 
-   ```
-   $ pip install -r requirements.txt
-   ```
+Export:
 
-2. Run the app
+✅ Processed data as a clean Excel file.
 
-   ```
-   $ streamlit run streamlit_app.py
-   ```
+⚠️ Missing rows in a separate Excel file for manual validation.
